@@ -8,6 +8,7 @@ Two destinations:
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 from datetime import datetime, timezone
@@ -35,33 +36,59 @@ def _notion_headers() -> dict:
     }
 
 
+def _safe_text(value: str | None, limit: int = 1900) -> list[dict]:
+    """Build a rich_text array safely. Empty strings allowed."""
+    s = (value or "").strip()[:limit]
+    if not s:
+        return []
+    return [{"type": "text", "text": {"content": s}}]
+
+
+def _safe_select(value: str | None) -> dict | None:
+    """Build a select property safely. None if value is empty/missing."""
+    s = (value or "").strip()
+    return {"name": s} if s else None
+
+
 def _build_notion_page(item: dict, database_id: str) -> dict:
     """Build the JSON payload for a single Notion page (database row)."""
     today_iso = datetime.now(timezone.utc).date().isoformat()
+
+    properties: dict = {
+        "Title": {
+            "title": [{"type": "text", "text": {"content": item["title"][:200]}}]
+        },
+        "Score": {"number": item["score"]},
+        "Date Added": {"date": {"start": today_iso}},
+        "Reviewed": {"checkbox": False},
+        "Summary": {"rich_text": _safe_text(item.get("claude_summary"))},
+        "Why It Matters": {"rich_text": _safe_text(item.get("why_it_matters"))},
+    }
+
+    # Select fields — only include if we have a value
+    if (sel := _safe_select(item.get("tier"))):
+        properties["Tier"] = {"select": sel}
+    if (sel := _safe_select(item.get("category"))):
+        properties["Category"] = {"select": sel}
+    if (sel := _safe_select(item.get("source"))):
+        properties["Source"] = {"select": sel}
+    properties["Decision"] = {"select": {"name": "⏳ Unreviewed"}}
+
+    # Multi-select for Project Match
+    pm = item.get("project_match") or []
+    if pm:
+        properties["Project Match"] = {
+            "multi_select": [{"name": p} for p in pm if p]
+        }
+
+    # URL — only include if non-empty (Notion rejects empty string URLs)
+    url = (item.get("url") or "").strip()
+    if url:
+        properties["URL"] = {"url": url}
+
     return {
         "parent": {"database_id": database_id},
-        "properties": {
-            "Title": {
-                "title": [{"text": {"content": item["title"][:200]}}]
-            },
-            "Score": {"number": item["score"]},
-            "Tier": {"select": {"name": item["tier"]}},
-            "Project Match": {
-                "multi_select": [{"name": p} for p in item.get("project_match", [])]
-            },
-            "Category": {"select": {"name": item["category"]}},
-            "Source": {"select": {"name": item["source"]}},
-            "URL": {"url": item["url"] or None},
-            "Summary": {
-                "rich_text": [{"text": {"content": (item.get("claude_summary") or "")[:1900]}}]
-            },
-            "Why It Matters": {
-                "rich_text": [{"text": {"content": (item.get("why_it_matters") or "")[:1900]}}]
-            },
-            "Date Added": {"date": {"start": today_iso}},
-            "Decision": {"select": {"name": "⏳ Unreviewed"}},
-            "Reviewed": {"checkbox": False},
-        },
+        "properties": properties,
     }
 
 
@@ -73,7 +100,12 @@ def push_to_notion(items: list[dict]) -> int:
 
     headers = _notion_headers()
     success = 0
-    for item in items:
+    failure_count = 0
+
+    log.info(f"Notion: starting writes for {len(items)} items "
+             f"to DB {database_id[:8]}…")
+
+    for i, item in enumerate(items, start=1):
         payload = _build_notion_page(item, database_id)
         try:
             resp = requests.post(
@@ -85,13 +117,22 @@ def push_to_notion(items: list[dict]) -> int:
             if resp.status_code == 200:
                 success += 1
             else:
-                log.warning(
-                    f"Notion write failed ({resp.status_code}) for "
-                    f"{item['title'][:60]}: {resp.text[:200]}"
+                failure_count += 1
+                log.error(
+                    f"[{i}/{len(items)}] Notion FAILED ({resp.status_code}) "
+                    f"for '{item['title'][:60]}': {resp.text[:500]}"
                 )
+                # Log the full payload of the FIRST failure so we can debug
+                if failure_count == 1:
+                    log.error(f"FIRST FAILURE PAYLOAD:\n{json.dumps(payload, indent=2)[:2500]}")
         except Exception as e:
-            log.error(f"Notion write exception for {item['title'][:60]}: {e}")
-    log.info(f"Notion: {success}/{len(items)} items written")
+            failure_count += 1
+            log.error(
+                f"[{i}/{len(items)}] Notion EXCEPTION for "
+                f"'{item['title'][:60]}': {type(e).__name__}: {e}"
+            )
+
+    log.info(f"Notion: {success}/{len(items)} written, {failure_count} failed")
     return success
 
 
