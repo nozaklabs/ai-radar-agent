@@ -1,25 +1,21 @@
 # 📡 NoZak Labs — AI Radar
 
-> _Last updated: 2026-05-22 12:23 UTC_
-> _Total items this run: 44 (2 act now, 12 watch, 30 archive)_
+> _Last updated: 2026-05-22 12:35 UTC_
+> _Total items this run: 40 (1 act now, 12 watch, 27 archive)_
 
 Review during your Mon 8:00 PM + Fri 8:00 PM Cairo slots. Full filtering and decision tracking happens in [Notion](https://www.notion.so/).
 
 ---
 
-## 🔥 Act Now (2)
+## 🔥 Act Now (1)
 
 _High-relevance items — evaluate during your radar slot._
 
 ### 
 
-- **[I spent 1 hour on a side project for my neighbor’s flower shop. It generated 18k in repeat sales!](https://www.reddit.com/r/SideProject/comments/1tje5oy/i_spent_1_hour_on_a_side_project_for_my_neighbors/)** `78` · Reddit · Brands of Eden, Cross-cutting  
-  Solo developer built a 1-hour automation project for a local flower shop using open-source workflow tools to send personalized reminder emails based on customer anniversaries/birthdays, driving $18k in repeat sales.  
-  _Why it matters:_ Direct case study for Brands of Eden's automation strategy — shows how simple email reminders and customer lifecycle automation drive repeat revenue in small e-commerce. The open-source workflow approach and minimal time investment match NoZak Labs' lean tooling philosophy and solo-founder constraints.
-
 - **[Aaseya Agentic Xcelerator](https://community.pega.com/marketplace/component/aaseya-agentic-xcelerator)** `78` · Pega Community · SE Job Hunt, Cross-cutting  
-  Aaseya Agentic Xcelerator is a Pega Platform component enabling enterprises to deploy AI agents, governance frameworks, and workflow orchestration through reusable accelerators and intelligent automation.  
-  _Why it matters:_ Direct relevance to SE Job Hunt — demonstrates advanced Pega 8.x agentic AI capabilities and decisioning patterns that address Noha's stated growth areas (robotics, decisioning, AI agents). Useful for interview prep, technical demos, and POC scenarios. Also strengthens Cross-cutting depth in AI agents and workflow automation for consulting credibility.
+  Aaseya Agentic Xcelerator is a Pega Platform component that provides reusable AI agents, governance frameworks, and workflow orchestration tools to accelerate agentic AI adoption in enterprise settings.  
+  _Why it matters:_ Directly relevant to SE Job Hunt — demonstrates advanced Pega 8.x agentic AI patterns and decisioning workflows that close Noha's skill gap in robotics and AI agents, making this a high-value case study for Pega SA exam prep and Advansys interview readiness. Also strengthens cross-cutting depth in AI agents and workflow automation for architecture discussions.
 
 
 
@@ -31,183 +27,171 @@ _Tangential relevance — skim if time permits._
 
 ### 
 
-- **[DCP](https://www.producthunt.com/products/dcp)** `72` · Product Hunt · Cross-cutting, SE Job Hunt  
-  DCP is a tool that provides encrypted permission and key management for AI agents, addressing security and access control in agentic workflows.  
-  _Why it matters:_ Directly relevant to Noha's current depth in AI agents and agentic workflows. As she builds multi-agent systems (Brands of Eden automation, lurniALP adaptive engine) and positions for SE roles, secure credential/permission handling is a critical architectural pattern. Worth evaluating during a radar slot to understand the approach and competitive landscape in agent security.
+- **[buildpipe](https://www.producthunt.com/products/buildpipe)** `72` · Product Hunt · Cross-cutting, SE Job Hunt  
+  buildpipe is a platform for composing, running, and automating multi-step AI developer workflows—positioning itself as a tool for orchestrating complex AI-assisted development tasks.  
+  _Why it matters:_ Directly relevant to Noha's current technical depth in AI agents and agentic workflows. Could inform SE interview discussions around workflow automation and AI integration patterns. Worth evaluating as a potential reference for lurniALP's adaptive learning orchestration, though primary value is cross-cutting knowledge on modern AI workflow platforms.
 
-- **[buildpipe](https://www.producthunt.com/products/buildpipe)** `72` · Product Hunt · SE Job Hunt, Cross-cutting  
-  buildpipe is a tool for composing, running, and automating multi-step AI developer workflows — essentially a workflow orchestration platform designed for AI-assisted development tasks.  
-  _Why it matters:_ Relevant to Noha's AI agents and agentic workflows cross-cutting interest, and potentially useful for demonstrating multi-step automation patterns in SE interviews. However, lacks detail on free tier availability, integration breadth (e-commerce, EdTech, rideshare APIs), and whether it solves specific Brands of Eden or lurniALP automation needs. Worth a light review to assess API-first architecture and workflow composition patterns.
+- **[Auto Posts](https://www.producthunt.com/products/auto-posts)** `72` · Product Hunt · Brands of Eden, Cross-cutting  
+  Auto Posts is a social media automation tool that schedules and autopilots content posting across social platforms. It appears designed to reduce manual posting overhead for social-first businesses.  
+  _Why it matters:_ Brands of Eden operates on Facebook/Instagram and could benefit from scheduled posting automation to maintain consistent content cadence without daily manual effort. However, the summary lacks detail on pricing tier (free/freemium?), integration depth with Zizi chatbot, or e-commerce-specific features like product carousel automation—which would elevate relevance. Worth a closer look during a radar slot to assess fit against current Zizi + Sheets workflow.
 
-- **[Tycoon AI](https://www.producthunt.com/products/tycoon-us)** `72` · Product Hunt · Brands of Eden, Cross-cutting  
-  Tycoon AI is a platform designed to automate one-person company operations using AI agents. It appears to handle business workflows that solo founders typically manage manually.  
-  _Why it matters:_ Directly relevant to NoZak Labs' indie hacker positioning and Brands of Eden's automation needs. The platform's agent-based approach aligns with Noha's current depth in AI agents and agentic workflows. Worth evaluating for patterns on orchestrating multi-agent systems for e-commerce tasks (inventory, customer service, marketing automation). However, product maturity and free-tier availability are unclear—needs a deeper look before prioritizing.
+- **[DCP](https://www.producthunt.com/products/dcp)** `72` · Product Hunt · SE Job Hunt, Cross-cutting  
+  DCP is a tool that provides encrypted permission management and key handling for AI agents, enabling secure credential passing and authorization in agentic workflows.  
+  _Why it matters:_ AI agents are central to Noha's technical depth and cross-cutting interests. Secure credential and permission management is a critical pattern for production agentic systems—relevant to her demos, POC work, and Solutions Engineer credibility. Less immediately actionable for active client projects, but strong for her SE interview prep and agent architecture knowledge.
 
-- **[Qwen 3.7 🤖, Cursor Composer 2.5 👨‍💻, Anthropic acquires Stainless 🛠️](https://tldr.tech/ai/2026-05-19)** `72` · TLDR AI · SE Job Hunt, Cross-cutting  
-  TLDR AI newsletter covering three AI/dev tool releases: Qwen 3.7 language model, Cursor Composer 2.5 IDE enhancement, and Anthropic's acquisition of Stainless (API code generation).  
-  _Why it matters:_ Cursor Composer 2.5 and Stainless are directly relevant to SE job hunt prep (demo-building, API design tooling) and cross-cutting dev workflow. Qwen 3.7 is a capable open-source LLM option for lurniALP and Brands of Eden automation. The Anthropic acquisition signals consolidation in AI-powered dev tools—useful for SE positioning.
+- **[Tycoon AI](https://www.producthunt.com/products/tycoon-us)** `72` · Product Hunt · Cross-cutting, SE Job Hunt  
+  Tycoon AI is a platform for automating one-person company operations using AI agents to handle tasks across business functions.  
+  _Why it matters:_ Directly relevant to NoZak Labs' positioning as a solo technical consultant and indie builder. Understanding agentic workflow orchestration and multi-agent systems is a current technical depth area that applies to both cross-cutting interests and Solutions Engineer interview prep. Worth evaluating for architectural patterns and demo/case study material, though not immediately blocking a specific project.
+
+- **[I spent 1 hour on a side project for my neighbor’s flower shop. It generated 18k in repeat sales!](https://www.reddit.com/r/SideProject/comments/1tje5oy/i_spent_1_hour_on_a_side_project_for_my_neighbors/)** `72` · Reddit · Brands of Eden, Cross-cutting  
+  A developer built a minimal automation system (email reminders for anniversaries/birthdays) for a flower shop using open-source workflow tools, generating $18k in repeat sales with ~1 hour of effort.  
+  _Why it matters:_ Directly mirrors Brands of Eden's e-commerce automation needs—low-code retention mechanics, open-source tooling, and proven ROI on personalization. The flower shop case study demonstrates the exact pattern NoZak Labs is pursuing: simple automation → customer lifecycle value. Worth reviewing for implementation patterns and messaging.
 
 - **[i built an invisible notes app for founders to make product demos faster](https://www.reddit.com/r/SideProject/comments/1thaz9g/i_built_an_invisible_notes_app_for_founders_to/)** `72` · Reddit · SE Job Hunt, Cross-cutting  
-  A founder built a notes app designed to help presenters run product demos faster by keeping notes invisible during live presentations. The tool likely uses overlay or hidden UI patterns to let presenters reference talking points without the audience seeing them.  
-  _Why it matters:_ Directly applicable to SE Job Hunt — technical demos and POCs are core SE work, and a tool that streamlines demo delivery could improve Noha's sales engineering practice. Also relevant cross-cutting for any future pitch or investor demo work across projects like Brands of Eden or Hykers during validation.
-
-- **[Auto Posts](https://www.producthunt.com/products/auto-posts)** `68` · Product Hunt · Brands of Eden, Cross-cutting  
-  Auto Posts is a social media automation tool that schedules and publishes content across multiple platforms automatically, positioning itself as an autopilot solution for social posting.  
-  _Why it matters:_ Brands of Eden operates on Facebook/Instagram and needs marketing automation; this could reduce manual posting overhead. However, the vague Product Hunt listing doesn't clarify pricing tier, free-tier availability, API depth, or integration with existing Zizi chatbot automation—so it needs evaluation before committing time.
+  A founder built a notes app overlay tool designed to help presenters reference talking points without breaking eye contact during product demos. The app keeps notes invisible to the audience while visible to the presenter.  
+  _Why it matters:_ Directly relevant to Noha's Solutions Engineer role pursuit — technical demos and POCs are core SE deliverables, and a tool that improves demo delivery confidence and polish could be valuable for Advansys opportunities. Also tangentially useful for founder credibility when pitching Hykers or Brands of Eden to stakeholders.
 
 - **[Python 3.15: features that didn't make the headlines](https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html)** `62` · Hacker News · Cross-cutting, SE Job Hunt  
-  Article exploring lesser-known features and improvements in Python 3.15, covering performance enhancements, standard library updates, and language refinements that didn't get major coverage.  
-  _Why it matters:_ Python is core to NoZak Labs' cross-cutting automation and AI agent work (n8n/Zapier alternatives, custom workflows). Understanding 3.15's under-the-radar improvements helps optimize existing tools and stay current with the ecosystem. Relevant for SE job interview prep (platform evolution knowledge) but not urgent for active Tier 1 project blockers.
-
-- **[Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O](https://arxiv.org/abs/2605.12460)** `62` · Hacker News · SE Job Hunt, Cross-cutting  
-  Research paper on parallelizing LLM inference across multiple streams — separating prompt processing, reasoning, and I/O into independent pipelines for throughput gains.  
-  _Why it matters:_ Relevant to AI agent architecture and optimization (cross-cutting interest), and potentially useful for SE interview prep on system design patterns. Not immediately actionable for current projects, but worth tracking as Noha deepens her AI agent and automation expertise.
+  An article highlighting lesser-known features and improvements in Python 3.15, complementing the major releases that typically get media attention.  
+  _Why it matters:_ Python ecosystem updates are relevant to NoZak Labs' cross-cutting interests and SE positioning. Understanding emerging Python features helps with lurniALP's ML stack, Brands of Eden automation scripts, and general technical depth for Solutions Engineer interviews. The focus on non-headline features suggests practical improvements to workflow efficiency.
 
 - **[Gemini 3.5 Flash ⚡️, Karpathy joins Anthropic 🧑‍💻, OpenAI Guaranteed Capacity ⚡](https://tldr.tech/ai/2026-05-20)** `62` · TLDR AI · SE Job Hunt, Cross-cutting  
-  Newsletter covering three AI developments: Google's Gemini 3.5 Flash model release, Andrej Karpathy's move to Anthropic, and OpenAI's new guaranteed capacity offering.  
-  _Why it matters:_ Gemini Flash could be a cheaper inference option for lurniALP's AI tutoring and Brands of Eden's chatbot automation. Karpathy at Anthropic signals shifts in frontier model development worth monitoring for SE interview prep. OpenAI's capacity tier is relevant for evaluating LLM cost/reliability tradeoffs across projects, but this is a news digest rather than actionable technical content.
+  Newsletter roundup covering Gemini 3.5 Flash release, Karpathy's move to Anthropic, and OpenAI's new capacity guarantees for enterprise customers.  
+  _Why it matters:_ Gemini 3.5 Flash and Claude updates are relevant for evaluating LLM options across Brands of Eden chatbot automation, lurniALP AI tutoring, and general agentic workflows. Karpathy at Anthropic signals deeper AI systems progress worth monitoring. OpenAI capacity tiers may inform SE job hunt discussions on enterprise AI deployment patterns, though this is ecosystem tracking rather than immediate action.
+
+- **[Qwen 3.7 🤖, Cursor Composer 2.5 👨‍💻, Anthropic acquires Stainless 🛠️](https://tldr.tech/ai/2026-05-19)** `62` · TLDR AI · SE Job Hunt, Cross-cutting  
+  Newsletter covering three AI/dev tool updates: Qwen 3.7 model release, Cursor Composer 2.5 IDE feature, and Anthropic's acquisition of Stainless (API generation/SDK tooling).  
+  _Why it matters:_ Cursor Composer could improve SE demo and POC velocity for Advansys role; Stainless acquisition signals Anthropic's push into API/integration patterns relevant to Solutions Engineering. Qwen 3.7 is a capable open-model alternative but less directly actionable without specific feature details. Worth skimming for tooling insights, but likely surface-level coverage in newsletter format.
 
 - **[I get 2k–5k users daily, but still can’t monetize my website](https://www.reddit.com/r/SideProject/comments/1thl7i6/i_get_2k5k_users_daily_but_still_cant_monetize_my/)** `62` · Reddit · Brands of Eden, Cross-cutting  
-  A founder with 2k–5k daily users on a puzzle game website shares monetization experiments (mobile app, affiliate promotion, AdSense) and discusses why they're struggling to convert traffic into revenue.  
-  _Why it matters:_ Directly relevant to Brands of Eden's monetization challenges — both are consumer-facing platforms with traffic but low conversion. The case study covers practical tactics (app distribution, affiliate models, ad networks) and failure modes that apply to e-commerce and content platforms. Also valuable for solo founder perspective on scaling past initial traction.
+  A solo founder with 2k–5k daily users on a puzzle games website shares failed monetization attempts (mobile app, affiliate promotion, AdSense) and seeks viable revenue models.  
+  _Why it matters:_ Directly relevant to Brands of Eden's e-commerce automation and margins problem—demonstrates real-world traffic-to-revenue gap and testing playbook. Also a strong indie hacker case study for cross-cutting interest in solo founder validation and conversion funnels. The monetization experiments (app, affiliate, ads) offer patterns Noha can study for her own projects.
 
-- **[Got my first paying users. Honestly did not expect it to feel this weird.](https://www.reddit.com/r/SideProject/comments/1tglk9l/got_my_first_paying_users_honestly_did_not_expect/)** `62` · Reddit · Brands of Eden, Cross-cutting  
-  A solo founder shares their emotional and operational experience crossing the threshold from zero to first paying users on a subscription tracker product (moneyleak.net), focusing on the psychological shift and quality accountability that comes with real revenue.  
-  _Why it matters:_ Directly relevant to Brands of Eden's current state (first order shipped, pre-breakeven) and Noha's indie hacker positioning. The post addresses the mindset shift from side project to revenue-generating business, bug prioritization under monetization, and customer responsibility—all challenges Noha will face as BoE scales. Worth reading for validation and operational thinking patterns.
+- **[69 days until Kickstarter. Reddit became my biggest source of waitlist signups.](https://www.reddit.com/r/SideProject/comments/1tisgkc/69_days_until_kickstarter_reddit_became_my/)** `58` · Reddit · Brands of Eden, Cross-cutting  
+  A side project founder shares their pre-launch strategy and how Reddit became their primary channel for building a Kickstarter waitlist.  
+  _Why it matters:_ Relevant to Brands of Eden's growth and marketing strategy — demonstrates community-driven validation and organic acquisition tactics that could apply to both the main brand and sister's skincare launch. Also useful for general indie hacker / solo founder patterns. However, the article is launch-focused rather than operational or technical, so relevance is moderate.
 
-- **[69 days until Kickstarter. Reddit became my biggest source of waitlist signups.](https://www.reddit.com/r/SideProject/comments/1tisgkc/69_days_until_kickstarter_reddit_became_my/)** `58` · Reddit · Brands of Eden, lurniALP, Hykers  
-  A side project founder shares their 69-day pre-launch journey to Kickstarter, highlighting Reddit as an unexpectedly effective channel for building their waitlist and community.  
-  _Why it matters:_ Directly relevant to NoZak Labs' indie founder positioning and validation approach. Brands of Eden and Hykers are both pre-launch or early-stage; this case study covers waitlist-building tactics and community engagement strategies that apply to two-sided marketplaces and consumer products. Good reference for Hykers' validation phase specifically.
+- **[Got my first paying users. Honestly did not expect it to feel this weird.](https://www.reddit.com/r/SideProject/comments/1tglk9l/got_my_first_paying_users_honestly_did_not_expect/)** `58` · Reddit · Brands of Eden, Cross-cutting  
+  A solo builder shares their emotional and operational experience hitting first paying customers on a subscription tracker product, reflecting on the shift from hobby to responsibility.  
+  _Why it matters:_ Brands of Eden just shipped its first order and is approaching product-market fit; this post captures the psychology and operational shift Noha will face as revenue scales. The mindset around bugs, prioritization, and user accountability is directly applicable to her early-stage e-commerce automation business. Useful calibration for indie founder narrative and decision-making patterns.
 
 
 
 ---
 
-## 📦 Archive (30)
+## 📦 Archive (27)
 
 _Low-relevance — kept for searchability only._
 
 ### 
 
-- **[Uv is fantastic, but its package management UX is a mess](https://www.loopwerk.io/articles/2026/uv-ux-mess/)** `42` · Hacker News · Cross-cutting  
-  A critical article about uv (the Rust-based Python package manager) examining friction points in its package management user experience despite its speed advantages.  
-  _Why it matters:_ uv is relevant to NoZak Labs' Python automation workflows (n8n, Zapier alternatives, LLM applications), but this is a UX critique rather than a feature/capability deep-dive. Useful for context if evaluating uv adoption, but doesn't unblock active development. Cross-cutting interest only — archive for later reference if uv becomes a bottleneck.
+- **[Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)](https://blog.simbastack.com/indexed-a-year-of-video-locally/)** `45` · Hacker News · Cross-cutting  
+  Technical deep-dive on running a large local LLM (Gemma 4 31B) on consumer hardware (2021 MacBook) to index and process a year of video data using swap memory.  
+  _Why it matters:_ Relevant to cross-cutting interest in local LLM inference and resource-constrained AI workflows, but the specific use case (video indexing on MacBook) doesn't directly unblock any active NoZak Labs project. Could be valuable reference for lurniALP's adaptive learning if offline LLM deployment becomes necessary, but currently lower priority than immediate project needs.
 
-- **[Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)](https://blog.simbastack.com/indexed-a-year-of-video-locally/)** `42` · Hacker News · Cross-cutting  
-  Technical writeup on indexing a year of video footage locally using Gemma2-31B and 50GB swap on a 2021 MacBook. Demonstrates running large LLMs on consumer hardware with creative optimization techniques.  
-  _Why it matters:_ Relevant to cross-cutting ML/LLM application patterns and understanding constraints of local model deployment, but lacks direct connection to any active NoZak Labs project. The video indexing use case doesn't map to Brands of Eden, lurniALP, Hykers, or SE Job Hunt. Archive for reference on local LLM deployment if future projects require offline ML inference.
+- **[Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O](https://arxiv.org/abs/2605.12460)** `42` · Hacker News · Cross-cutting  
+  Academic paper on parallelizing LLM inference by separating prompt processing, reasoning, and I/O streams into concurrent execution paths.  
+  _Why it matters:_ While multi-stream LLM architectures could theoretically improve latency in agentic systems (relevant to Brands of Eden chatbot and SE Job Hunt AI agent work), this is a foundation model architecture paper focused on inference optimization rather than application-level patterns. NoZak Labs' immediate need is proven agentic frameworks and integration patterns, not LLM infrastructure research.
 
 - **[We're testing new ad formats in Search and expanding our Direct Offers pilot](https://blog.google/products/ads-commerce/google-marketing-live-search-ads/)** `42` · Hacker News · Brands of Eden  
-  Google announces new search ad formats and expansion of Direct Offers pilot program for advertisers on Google Search and Shopping.  
-  _Why it matters:_ Brands of Eden runs paid acquisition on social (Facebook/Instagram) but not yet on search. Google's new ad formats and Direct Offers could be relevant for future paid search strategy, but this is a high-level product announcement with no technical implementation detail. Lower priority vs. immediate social commerce automation needs.
+  Google announces new Search ad formats and expansion of Direct Offers pilot for e-commerce advertisers to reach customers more directly.  
+  _Why it matters:_ Brands of Eden is a Facebook/Instagram-first e-commerce business; Google Search ads are a secondary channel at best. The Direct Offers feature could be relevant for scaling acquisition, but Noha hasn't indicated Google is in her current marketing stack, and the tool is still in pilot. Worth monitoring as a potential paid channel, but not actionable this week.
 
-- **[Training Data - AI Microgames](https://www.producthunt.com/products/training-data-ai-microgames)** `42` · Product Hunt · lurniALP  
-  Training Data is a gamified platform where users play microgames to generate labeled training datasets for AI models. It's positioned as a crowdsourced data collection tool.  
-  _Why it matters:_ While the concept of gamified learning could tangentially inspire lurniALP's engagement mechanics, this is primarily a data labeling tool, not an adaptive learning platform or assessment engine. No direct blockers for NoZak Labs projects, and the product feels consumer-focused rather than B2B/EdTech-applicable.
+- **[Uv is fantastic, but its package management UX is a mess](https://www.loopwerk.io/articles/2026/uv-ux-mess/)** `35` · Hacker News · —  
+  Opinion piece criticizing the UX of uv, a fast Python package manager, despite acknowledging its technical strengths.  
+  _Why it matters:_ While Python tooling is relevant to Noha's SE transition and cross-cutting interests, this is primarily a subjective critique rather than actionable guidance. Unless uv is blocking a specific workflow (lurniALP or automation work), this is a blog opinion rather than a tool evaluation or technical resource.
 
-- **[Reader Alive](https://www.producthunt.com/products/reader-alive)** `42` · Product Hunt · lurniALP  
-  Reader Alive is an ebook tool that adds translation, text-to-speech, and Q&A capabilities to digital books using AI.  
-  _Why it matters:_ While the translation and TTS features could theoretically support lurniALP's student learning experience, the product is primarily a consumer ebook reader rather than an adaptive learning platform or curriculum tool. Limited relevance to exam prep automation or knowledge tracing.
-
-- **[Smart Miles](https://www.producthunt.com/products/smart-miles)** `42` · Product Hunt · Hykers  
-  Smart Miles is an automatic trip tracking app that logs miles and exports data for tax purposes, likely using GPS or connected vehicle APIs.  
-  _Why it matters:_ While Hykers is a rideshare/matching platform and could theoretically benefit from trip tracking infrastructure, Smart Miles is primarily a consumer tax tool, not a platform or marketplace builder. No direct value for current NoZak Labs priorities (e-commerce automation, adaptive learning, rideshare validation, or SE job prep). Weak archive keep only.
-
-- **[Waymo pauses Atlanta service as its robotaxis keep driving into floods](https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/)** `35` · Hacker News · Hykers  
-  Waymo paused its Atlanta robotaxi service after autonomous vehicles repeatedly drove into flooded areas, highlighting geolocation and real-time environmental awareness challenges in ride-sharing systems.  
-  _Why it matters:_ While tangentially relevant to Hykers' geospatial matching and safety challenges, this is primarily a cautionary case study rather than an actionable tool or pattern. The lesson (integrate weather/hazard data into routing) is useful but not urgent for the planning phase. Scoring low because Hykers is still in validation and doesn't yet need production robotaxi failure analysis.
+- **[Waymo pauses Atlanta service as its robotaxis keep driving into floods](https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/)** `35` · Hacker News · —  
+  Waymo paused its autonomous robotaxi service in Atlanta after vehicles repeatedly drove into flooded areas, highlighting real-world safety and routing challenges in autonomous vehicle systems.  
+  _Why it matters:_ While Hykers is a rideshare marketplace, this is primarily a case study in autonomous vehicle failure rather than marketplace architecture, geospatial matching, or two-sided platform validation. The flooding-routing issue is relevant only tangentially to geolocation logic. Not actionable for Noha's current planning phase.
 
 - **[GitHub confirms breach of 3,800 repos via malicious VSCode extension](https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/)** `35` · Hacker News · —  
-  GitHub confirmed a security breach affecting 3,800 repositories through a malicious VSCode extension that compromised developer credentials and repo access.  
-  _Why it matters:_ While security awareness is always relevant to development workflows, this is a specific incident report with no actionable tooling, framework, or pattern for NoZak Labs. No direct project impact unless Noha's own repos were compromised—in which case this is reactive incident response, not proactive radar signal. Archive for reference only.
-
-- **[Nugget AI](https://www.producthunt.com/products/nugget-ai)** `35` · Product Hunt · —  
-  Nugget AI is a tool that analyzes customer interviews and automatically generates product roadmap insights using AI.  
-  _Why it matters:_ While customer research and roadmap synthesis are valuable, Nugget AI is a general product management tool with no direct relevance to NoZak Labs' current projects. Brands of Eden, lurniALP, Hykers, and the SE job hunt have different technical and operational priorities — none require interview-to-roadmap automation at this stage.
-
-- **[WordPress 7.0](https://www.producthunt.com/products/wordpress-7-0)** `35` · Product Hunt · —  
-  WordPress 7.0 (codename Armstrong) has launched, bringing updates to the WordPress CMS platform.  
-  _Why it matters:_ WordPress is a generic CMS with no direct relevance to NoZak Labs' active projects. Brands of Eden uses a custom tech stack (Zizi chatbot, Google Sheets, custom automation); lurniALP and Hykers require specialized platforms (adaptive learning, mobile rideshare), not WordPress. No free-tier automation or integration angle for current priorities.
+  GitHub confirmed a security breach affecting 3,800 repositories through a malicious VSCode extension that was compromised. The incident highlights supply-chain risks in the developer tools ecosystem.  
+  _Why it matters:_ While security awareness is valuable for any developer, this is a general industry incident with no direct bearing on NoZak Labs' active projects. It's informational for defensive posture but doesn't unblock product work, technical decisions, or sales positioning. Archive for reference only.
 
 - **[Shuffle Design CLI](https://www.producthunt.com/products/shuffle-design-cli)** `35` · Product Hunt · —  
-  Shuffle Design CLI is a multi-AI command-line tool for building and redesigning websites. It appears positioned as a no-code/low-code design automation tool.  
-  _Why it matters:_ While website design tooling could tangentially support Brands of Eden's e-commerce presence, this is a design-focused tool rather than an automation or backend systems tool. NoZak Labs' tech stack for Brands of Eden emphasizes order/inventory automation, chatbots, and analytics—not website design. No direct fit for SE job hunt, lurniALP, or Hykers. Low relevance to active priorities.
+  Shuffle Design CLI is a multi-AI command-line tool for building and redesigning websites. It appears to be a generative design automation tool targeting web developers.  
+  _Why it matters:_ While workflow automation and AI agents are cross-cutting interests, this tool is primarily for website design/generation rather than the business automation, e-commerce operations, or adaptive learning systems that NoZak Labs focuses on. No direct application to Brands of Eden's e-commerce stack, lurniALP's educational platform, Hykers' rideshare infrastructure, or SE job hunt preparation.
 
-- **[motionvid.ai](https://www.producthunt.com/products/motionvid-ai)** `35` · Product Hunt · Brands of Eden  
-  motionvid.ai is an AI-powered motion and video editing tool that automates video creation and editing workflows.  
-  _Why it matters:_ Weak relevance to Brands of Eden's social commerce strategy (Facebook/Instagram content creation could benefit from automated video). However, video editing is not a core blocker for the business, and the tool appears to be design-focused rather than e-commerce or automation platform tooling. Archive for later if content production becomes a bottleneck.
+- **[Nugget AI](https://www.producthunt.com/products/nugget-ai)** `35` · Product Hunt · —  
+  Nugget AI is a tool that automatically synthesizes customer interviews into product roadmap insights using AI analysis.  
+  _Why it matters:_ While customer research is valuable for validation work (relevant to Hykers' planning phase), Nugget AI is a generic product management tool with no specific relevance to NoZak Labs' current projects. Brands of Eden, lurniALP, and SE Job Hunt don't involve customer interview synthesis workflows. The tool is enterprise-focused and doesn't offer automation or integration angles that align with NoZak's technical depth areas.
 
-- **[AlliHat](https://www.producthunt.com/products/allihat)** `35` · Product Hunt · —  
-  AlliHat is a Safari sidebar extension that embeds Claude AI for quick access to the language model within the browser.  
-  _Why it matters:_ While Claude integration could tangentially support content/copywriting tasks across projects, this is a consumer browser tool with no direct relevance to e-commerce automation (Brands of Eden), adaptive learning (lurniALP), rideshare validation (Hykers), or SE interviews. Not a build blocker or strategic tool for any active workstream.
+- **[WordPress 7.0](https://www.producthunt.com/products/wordpress-7-0)** `35` · Product Hunt · —  
+  WordPress 7.0 (codenamed Armstrong) has been released with new features and updates to the WordPress core platform.  
+  _Why it matters:_ WordPress is a general-purpose CMS and doesn't align with NoZak Labs' tech stack priorities. Brands of Eden uses Shopify/custom automation (not WordPress), lurniALP requires adaptive LMS architecture, Hykers needs mobile-first rideshare infrastructure, and SE Job Hunt focuses on Pega. WordPress 7.0 is enterprise-grade but not targeted at the specific automation, e-commerce, or edtech problems NoZak Labs is solving.
 
-- **[Framed](https://www.producthunt.com/products/framed-mockup-studio)** `35` · Product Hunt · Brands of Eden  
-  Framed is a mockup studio tool that converts screenshots, videos, and code into polished visuals for presentations and marketing.  
-  _Why it matters:_ Could have marginal value for Brands of Eden's marketing materials and social commerce content creation, but it's a generic design tool without automation or e-commerce-specific features. Not a priority against core needs (chatbot, inventory, analytics).
+- **[AutoSubtitles 2.0](https://www.producthunt.com/products/autosubtitles)** `35` · Product Hunt · Brands of Eden  
+  AutoSubtitles 2.0 is an AI tool that generates subtitles and animated captions for video content with faster editing workflows.  
+  _Why it matters:_ While video content could theoretically benefit Brands of Eden's social commerce presence (Facebook/Instagram), this is a generic media tool with no direct connection to e-commerce automation, chatbots, inventory, or the core tech stack. Marginally useful for content creation but not a project blocker or differentiator.
 
 - **[Anthropic SpaceX $45B deal 💰, Google Agent Executor ⚙️, OpenAI races to IPO 🏦](https://tldr.tech/ai/2026-05-21)** `35` · TLDR AI · —  
-  News roundup covering Anthropic's funding round, Google's Agent Executor tool, and OpenAI's IPO trajectory.  
-  _Why it matters:_ The Agent Executor tool has marginal relevance to cross-cutting AI agent interests, but the core item is financial/industry speculation (funding, IPO timing) with no actionable technical depth for NoZak Labs' projects. The Anthropic deal and OpenAI IPO are narrative-driven noise rather than operational insights.
+  A news roundup covering major AI industry funding/business moves (Anthropic-SpaceX partnership, OpenAI IPO plans) and a brief mention of Google's Agent Executor tool.  
+  _Why it matters:_ While Agent Executor could theoretically apply to cross-cutting AI agent interests, this item is primarily business/finance news about corporate deals and IPO speculation—not technical content or actionable tooling. The agent tool mention is too shallow to act on without deeper documentation.
 
 - **[Reviving PapersWithCode (by Hugging Face) [P]](https://www.reddit.com/r/MachineLearning/comments/1tgmwqr/reviving_paperswithcode_by_hugging_face_p/)** `35` · Reddit · —  
-  Hugging Face announcement about reviving PapersWithCode, a platform for discovering ML papers and their implementations. Likely focuses on updates to the paper-code linking ecosystem.  
-  _Why it matters:_ While Hugging Face is relevant to NoZak Labs' AI work, PapersWithCode is primarily a research discovery tool. It doesn't directly support active projects (Brands of Eden needs e-commerce tools, lurniALP needs educational frameworks, Hykers needs rideshare architecture, SE Job Hunt needs interview prep). Generic ML paper discovery is lower priority than hands-on tooling or case studies for shipping products.
-
-- **[What do you think about Tabular Foundation Models [D]](https://www.reddit.com/r/MachineLearning/comments/1thofoe/what_do_you_think_about_tabular_foundation_models/)** `35` · Reddit · —  
-  Reddit discussion questioning the practical utility of TabPFN-3 and other tabular foundation models, noting they require large GPUs and multi-GB model downloads to handle only small datasets (few MB).  
-  _Why it matters:_ While tabular ML could theoretically support lurniALP (student modeling) or Brands of Eden (analytics), this is a philosophical debate about foundation model efficiency rather than actionable tooling. No direct project application, and falls into 'foundation model architecture papers' noise filter — interesting but not operationally useful for NoZak Labs right now.
+  Hugging Face announcement about reviving PapersWithCode, a repository linking ML research papers with their implementations and datasets.  
+  _Why it matters:_ While PapersWithCode is a valuable ML resource, this is primarily of interest to foundation model researchers and academic ML practitioners. NoZak Labs' active projects (e-commerce, edtech, rideshare) don't require deep engagement with research paper implementations. Cross-cutting interest in LLM patterns is present but this is infrastructure-level rather than directly applicable to current builds.
 
 - **[Released a free 9.8M doc Indic multilingual corpus — Hindi, Bengali, Tamil, Telugu + 7 more (CC0, HuggingFace) [P]](https://www.reddit.com/r/MachineLearning/comments/1th4po3/released_a_free_98m_doc_indic_multilingual_corpus/)** `35` · Reddit · —  
-  A free, CC0-licensed multilingual corpus of 9.8M documents covering 11 Indic languages (Hindi, Bengali, Tamil, Telugu, etc.) plus English, totaling ~8.4B tokens, published on HuggingFace.  
-  _Why it matters:_ While multilingual LLM datasets are valuable for foundation model training, this corpus is not a direct fit for NoZak Labs' active projects. lurniALP targets Checkpoint English (single language, exam-specific), Brands of Eden operates primarily in English/Arabic markets, and Hykers is Egypt-focused. The dataset would only be relevant if NoZak Labs were building multilingual LLM models from scratch, which is not currently in scope.
+  A researcher released a free, CC0-licensed multilingual corpus of ~9.8M documents across 11 Indic languages (Hindi, Bengali, Tamil, Telugu, etc.) totaling ~8.4B tokens, hosted on HuggingFace.  
+  _Why it matters:_ While multilingual LLM datasets are valuable for general ML research, NoZak Labs' immediate projects (e-commerce, adaptive learning, rideshare) operate primarily in English or have no stated Indic language requirement. lurniALP targets Checkpoint English exam prep in Egypt, not Indic language education. This is a solid resource for future multilingual work but not actionable for current Tier 1 initiatives.
 
 - **[I built a website to convert any topic into a beautiful blog](https://www.reddit.com/r/SideProject/comments/1thokdf/i_built_a_website_to_convert_any_topic_into_a/)** `35` · Reddit · —  
-  A side project that automatically generates blog posts from topics using AI. The builder shares their implementation approach and invites feedback from the Reddit community.  
-  _Why it matters:_ While content generation is tangentially relevant to marketing automation (Brands of Eden) and educational content (lurniALP), this is a generic AI blog tool with no direct application to NoZak Labs' specific workflows. No mention of e-commerce, marketplace validation, adaptive learning, or SE interview prep. Archive for potential reference to LLM application patterns, but not urgent.
-
-- **[Launching in 2 days and really nervous](https://www.reddit.com/r/SideProject/comments/1tjjiei/launching_in_2_days_and_really_nervous/)** `35` · Reddit · Cross-cutting  
-  A bootstrapped side project creator seeking moral support ahead of a Product Hunt launch after 3 years of solo development and 50k users.  
-  _Why it matters:_ While indie/solo founder narratives are interesting cross-cutting context, this is a generic launch post without technical depth, tooling, or methodology details that would help NoZak Labs. No concrete patterns, architecture, or lessons shared.
+  A side project that uses AI to automatically convert topics into formatted blog posts with a visual interface.  
+  _Why it matters:_ While content generation tooling has tangential relevance to marketing automation (Brands of Eden), this is a generic productivity app without specific automation, e-commerce, or SE relevance. No direct project blockers or strategic fit.
 
 - **[SAP Extender](https://community.pega.com/marketplace/component/sap-extender)** `35` · Pega Community · SE Job Hunt  
-  SAP Extender is a Pega component that enables rapid integration between Pega applications and SAP systems using prebuilt connectors and reusable APIs.  
-  _Why it matters:_ While this demonstrates integration patterns and enterprise connector architecture relevant to Solutions Engineer depth, SAP is an enterprise-only tool outside NoZak Labs' current project scope. None of the three active projects (Brands of Eden, lurniALP, Hykers) use or target SAP. Weak relevance to SE job hunt unless interviewing at SAP-heavy enterprise clients.
+  SAP Extender is a Pega marketplace component that provides prebuilt connectors and APIs for integrating Pega applications with SAP systems at enterprise scale.  
+  _Why it matters:_ While Pega integration patterns are relevant to SE interview prep and Pega platform depth, SAP integration is enterprise-specific tooling with no direct application to NoZak Labs' current projects (all SMB/startup focused). Useful for Pega SA knowledge breadth, but not an active blocker or opportunity.
 
-- **[Slumber a TUI HTTP Client](https://slumber.lucaspickering.me)** `28` · Hacker News · —  
-  Slumber is a terminal UI (TUI) HTTP client for making and managing API requests from the command line, similar to Postman or Insomnia but in the terminal.  
-  _Why it matters:_ While TUI tools align with solo developer workflows, Slumber is a development utility rather than a direct unlocker for NoZak Labs' active projects. The SE Job Hunt could tangentially benefit from API testing tools, but this is lower priority than integrations and frameworks needed for Brands of Eden, lurniALP, and Hykers.
+- **[My wife and I built a fog-of-war walking app because we couldn't stop imagining one — Walksy](https://www.reddit.com/r/SideProject/comments/1th0sva/my_wife_and_i_built_a_fogofwar_walking_app/)** `32` · Reddit · —  
+  A couple built a gamified walking app that visualizes discovered locations like a fog-of-war map from MMOs, inspired by years of joking about 'unlocking' their neighborhood during walks.  
+  _Why it matters:_ While the indie hacker execution is solid, this is a consumer habit app without automation, marketplace, or education angles. It doesn't connect to any NoZak Labs project: not e-commerce (Brands of Eden), not adaptive learning (lurniALP), not two-sided marketplace validation (Hykers), not SE positioning, and not workflow automation or AI agents (cross-cutting). Relevant to 'indie hacker case studies' interest but lacks technical depth or patterns applicable to current work.
 
-- **[The death of the brick and mortar toy store](https://brainbaking.com/post/2026/05/the-death-of-the-brick-and-mortar-toy-store/)** `28` · Hacker News · —  
-  An article discussing the decline of physical toy retail stores and the shift to e-commerce and online shopping.  
-  _Why it matters:_ While Brands of Eden is an e-commerce business, this is a general retail trend analysis without actionable technical insights, automation patterns, or tools applicable to NoZak Labs' current projects. No direct relevance to learning platforms, rideshare validation, or SE job hunt.
+- **[Just launched my PNG website 🚀](https://www.reddit.com/r/SideProject/comments/1tim34c/just_launched_my_png_website/)** `32` · Reddit · Brands of Eden  
+  A newly launched free PNG image website offering transparent images for personal and commercial use, with ongoing improvements to search and design.  
+  _Why it matters:_ While Brands of Eden could theoretically use free product imagery for marketing mockups or skincare branding, this is a generic asset library with no e-commerce, automation, or technical depth relevant to NoZak Labs' core needs. Not a strategic tool or pattern.
+
+- **[Launching in 2 days and really nervous](https://www.reddit.com/r/SideProject/comments/1tjjiei/launching_in_2_days_and_really_nervous/)** `32` · Reddit · Cross-cutting  
+  A bootstrapped founder is launching their project on Product Hunt after 3 years of development and 50k users, seeking community support and moral encouragement.  
+  _Why it matters:_ While this is an inspiring indie hacker story that aligns with Noha's solo founder journey, it's a generic launch post with no technical details, tooling specifics, or concrete learnings that would directly benefit NoZak Labs' projects. The emotional support angle is nice but not actionable for the radar.
+
+- **[Cleo](https://www.producthunt.com/products/cleo-4)** `28` · Product Hunt · —  
+  Cleo is an AI-powered project management tool designed to automate team coordination and task management.  
+  _Why it matters:_ While AI agents and workflow automation align with NoZak Labs' cross-cutting interests, Cleo is a general team PM tool targeting multi-person organizations. NoZak Labs is a one-person studio with specialized automation needs (e-commerce, EdTech, rideshare validation) that require domain-specific tooling, not generic team management. No free tier mentioned.
+
+- **[Zero Assist](https://www.producthunt.com/products/zero-assist)** `28` · Product Hunt · —  
+  Zero Assist is an AI tool that detects cheating in real-time during technical interviews by monitoring candidate behavior and tool usage.  
+  _Why it matters:_ While interview proctoring could tangentially relate to SE job prep, this is a hiring/assessment tool for companies, not a resource for interview preparation, skill-building, or technical depth. NoZak Labs is not building interview platforms or hiring tech. Weak relevance to any active project.
 
 - **[iPromise - AI focus buddy for deep work.](https://www.producthunt.com/products/ipromise-ai-focus-buddy-for-deep-work)** `28` · Product Hunt · —  
-  iPromise is a Mac-native AI focus companion that uses body doubling (virtual co-working) to help users maintain deep work sessions.  
-  _Why it matters:_ While focus and productivity tools could tangentially benefit a solo founder's workflow, iPromise is a generic productivity app without automation, integration, or technical depth angles. It doesn't address NoZak Labs' core needs: e-commerce automation, adaptive learning platforms, rideshare infrastructure, or Solutions Engineer positioning. Explicit noise filter: generic productivity app.
+  iPromise is a macOS app that provides AI-powered "body doubling" (virtual co-working presence) in the Mac notch to help with focus and deep work.  
+  _Why it matters:_ Generic productivity/focus tool with no automation, integration, or project-specific angle. NoZak Labs needs workflow automation, technical tooling, and business enablement — not personal productivity UX. Does not match any active project or cross-cutting interest.
 
-- **[DecisionBox for Databricks](https://www.producthunt.com/products/decisionbox)** `28` · Product Hunt · —  
-  DecisionBox is a tool that integrates with Databricks to validate analytical findings and decisions.  
-  _Why it matters:_ While decision validation and Databricks integration could theoretically support analytics for Brands of Eden or SE job hunt positioning, DecisionBox appears to be enterprise analytics tooling with no clear free tier or automation angle. No direct project unblocking or cost-effective fit for NoZak Labs' current needs.
+- **[Training Data - AI Microgames](https://www.producthunt.com/products/training-data-ai-microgames)** `28` · Product Hunt · —  
+  A gamified platform where users play microgames to generate training data for AI models. Appears to be a crowdsourced data labeling tool disguised as gameplay.  
+  _Why it matters:_ While data labeling and AI training are tangentially relevant to lurniALP's adaptive learning engine, this product is a general-purpose data collection tool with no specific EdTech, e-commerce, or rideshare application. Not directly actionable for any Tier 1 project. lurniALP needs curriculum data and student modeling frameworks, not a generic microgame platform for AI training data.
 
-- **[Ente Locker](https://www.producthunt.com/products/ente-locker)** `28` · Product Hunt · —  
-  Ente Locker is a shared vault for storing and managing important documents with encryption and access controls.  
-  _Why it matters:_ While document management could theoretically apply to Brands of Eden operations or lurniALP curriculum storage, Ente Locker is a consumer/team document tool without automation, API integration, or workflow hooks. NoZak Labs needs tools that actively drive revenue, reduce manual labor, or improve platform architecture—not static vaults. No direct path to any active project.
+- **[Reader Alive](https://www.producthunt.com/products/reader-alive)** `28` · Product Hunt · —  
+  Reader Alive is an ebook reader tool that adds translation, text-to-speech, and Q&A capabilities to digital books.  
+  _Why it matters:_ While the LLM-powered Q&A angle is interesting, this is a consumer reading app with no direct relevance to e-commerce automation, adaptive learning platforms, rideshare validation, or Solutions Engineer positioning. Not applicable to any active NoZak Labs project.
 
-- **[TongueType for macOS](https://www.producthunt.com/products/tonguetype)** `28` · Product Hunt · —  
-  TongueType is a local dictation tool for macOS that eliminates the need for subscription-based speech-to-text services.  
-  _Why it matters:_ While local AI tooling is relevant to cross-cutting interests, this is a consumer productivity app with no automation, API, or integration angle. Not applicable to Brands of Eden, lurniALP, Hykers, or SE job hunt. Matches the 'generic productivity apps' noise filter.
+- **[motionvid.ai](https://www.producthunt.com/products/motionvid-ai)** `28` · Product Hunt · Brands of Eden  
+  motionvid.ai is an AI-powered motion and video editing tool for creating and editing videos with minimal manual effort.  
+  _Why it matters:_ While video content could support Brands of Eden's Instagram/Facebook marketing, this is a generic creative tool without automation, integration, or e-commerce-specific features. Not a core blocker for any Tier 1 project, and better alternatives exist for social commerce workflows.
 
-- **[My wife and I built a fog-of-war walking app because we couldn't stop imagining one — Walksy](https://www.reddit.com/r/SideProject/comments/1th0sva/my_wife_and_i_built_a_fogofwar_walking_app/)** `28` · Reddit · —  
-  A couple built a walking app that visualizes explored areas as a fog-of-war mechanic from gaming, revealing a map as users walk through their city.  
-  _Why it matters:_ While the project demonstrates indie developer execution and geospatial mechanics (tangentially relevant to Hykers' location tech), it's a consumer gamification app with no direct connection to NoZak Labs' active projects. Hykers needs rideshare/marketplace validation, not walking gamification. No automation, e-commerce, education, or SE job relevance.
+- **[Smart Miles](https://www.producthunt.com/products/smart-miles)** `28` · Product Hunt · —  
+  Smart Miles is a mobile app that automatically tracks vehicle trips and generates tax-ready mileage reports for expense deduction.  
+  _Why it matters:_ While trip tracking and automation align with NoZak Labs' interest in workflow automation, Smart Miles is a consumer tax/accounting tool with no direct application to any active project. Hykers involves geolocation and matching but is a rideshare platform, not a mileage tracker. Not relevant to e-commerce, EdTech, SE positioning, or cross-cutting technical interests.
+
+- **[What do you think about Tabular Foundation Models [D]](https://www.reddit.com/r/MachineLearning/comments/1thofoe/what_do_you_think_about_tabular_foundation_models/)** `28` · Reddit · —  
+  Reddit discussion questioning the practical utility of tabular foundation models (TabPFN-3, TabICL) due to their computational overhead relative to dataset size and performance gains.  
+  _Why it matters:_ Foundation model architecture papers and theoretical ML debates fall into explicit noise filter. While tabular ML could tangentially support lurniALP's student modeling or Brands of Eden's analytics, this item is a generic opinion discussion with no actionable tooling, framework, or case study. Not immediately applicable to active Tier 1 project work.
 
 - **[I'm working on a diary sharing site called Poplar](https://www.reddit.com/r/SideProject/comments/1thrf36/im_working_on_a_diary_sharing_site_called_poplar/)** `28` · Reddit · —  
-  Poplar is a diary-sharing platform where users post entries and receive five random entries in return, with bookmarking and curation features. It's a side project focused on community and emotional connection.  
-  _Why it matters:_ While this is a well-intentioned indie project, it has no direct relevance to NoZak Labs' active work. Brands of Eden needs e-commerce automation; lurniALP needs adaptive learning; Hykers needs rideshare validation; SE Job Hunt needs technical depth. Diary-sharing is a consumer social app with no automation, B2B, or technical advisory angle. Archive for reference on indie product launches only.
-
-- **[Just launched my PNG website 🚀](https://www.reddit.com/r/SideProject/comments/1tim34c/just_launched_my_png_website/)** `28` · Reddit · Brands of Eden  
-  A Reddit post about a newly launched free PNG image website offering transparent images for personal and commercial use.  
-  _Why it matters:_ Tangentially useful for Brands of Eden product imagery sourcing, but the post itself is generic social validation-seeking with no technical depth, tooling patterns, or actionable automation lessons. Not a case study or reference architecture—just a launch announcement.
+  Poplar is a diary-sharing social platform where users exchange diary entries with random peers and curate bookmarked entries into personal journals.  
+  _Why it matters:_ No direct relevance to NoZak Labs' active projects. Brands of Eden is e-commerce/automation-focused; lurniALP is adaptive learning; Hykers is rideshare validation; SE Job Hunt targets Solutions Engineer roles. A consumer social product offers no technical depth, architectural patterns, or tooling insights applicable to these goals. This is a side-project showcase with no automation, integration, or platform-building angle.
 
 
 
