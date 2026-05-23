@@ -1,5 +1,10 @@
 # 🛰️ AI Radar Agent
 
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-running%20Mon%20%2B%20Fri-success)
+![Cost](https://img.shields.io/badge/cost-<%20%241%2Fmonth-brightgreen)
+
 An autonomous agent that filters the AI/tech firehose into a curated, scored, project-aware digest — so a builder can stay informed without getting distracted.
 
 Built by [Noha Zak](https://github.com/NohaZak) for **NoZak Labs** to defend focus while staying current.
@@ -17,7 +22,7 @@ Twice a week (Mon + Fri at 7:00 AM Cairo), this agent:
 5. **Writes** scored items into a **Notion database** for filterable review
 6. **Updates** `radar.md` in this repo and commits it back
 
-Total weekly cost: **~$0.25 in Claude API usage.** Runs on GitHub Actions free tier.
+Total cost: **~$0.25/week (~$1/month)** in Claude API usage. Runs on GitHub Actions free tier.
 
 ---
 
@@ -70,6 +75,22 @@ The rubric and the full project context live in [`src/context.py`](src/context.p
 
 ---
 
+## Sample output
+
+An excerpt from a real run. The agent fetched 45 items, scored each one against the NoZak Labs project context, and surfaced this as the highest-relevance item that week:
+
+> ### 🔥 Act Now
+>
+> **[Aaseya Agentic Xcelerator](https://community.pega.com/marketplace/component/aaseya-agentic-xcelerator)** `78` · Pega Community · _SE Job Hunt, Cross-cutting_
+>
+> Aaseya's Agentic Xcelerator is a Pega Platform component enabling enterprises to build and deploy AI agents with governance frameworks, workflow orchestration, and automation capabilities.
+>
+> _Why it matters:_ Directly relevant to SE Job Hunt — Pega Robotics and Decisioning are growth areas, and agentic AI on Pega is an emerging platform capability. Understanding enterprise agentic patterns, governance, and workflow integration strengthens SA technical depth and interview readiness.
+
+What makes this useful isn't the score — it's the _Why it matters_ line. The agent connects the item to specific active projects (SE Job Hunt, Cross-cutting), not just generic AI relevance. Lower-scoring items get the same treatment in [`radar.md`](radar.md), including explicit reasoning for why something is noise.
+
+---
+
 ## Tech stack
 
 - **Python 3.11**
@@ -111,7 +132,7 @@ pip install -r requirements.txt
 # Set env vars (use a .env file or your shell)
 export ANTHROPIC_API_KEY=sk-ant-...
 export NOTION_TOKEN=ntn_...
-export NOTION_DATABASE_ID=624bb437-73da-4bfe-a66e-1c192cfed053
+export NOTION_DATABASE_ID=your_database_id_here
 
 # Run the agent
 python -m src.main
@@ -122,6 +143,19 @@ python -m src.main
 ## Updating priorities
 
 Project priorities live in `src/context.py`. Edit the `PROJECTS`, `CROSS_CUTTING`, or `NOISE_FILTERS` blocks, commit, and the next scheduled run will use the updated context. No other code changes needed.
+
+---
+
+## Roadmap
+
+This is a living project. Active and planned improvements:
+
+- [ ] **Broader score distribution** — current scoring buckets too many items at exactly 72. Refine the rubric prompt so cross-cutting items differentiate more sharply.
+- [ ] **Weekly digest email** — push the Act Now section to email every Monday/Friday morning, so the radar is reviewable from the inbox without opening Notion.
+- [ ] **Source quality feedback loop** — track which "Act Now" items actually convert to "Adopt" decisions in Notion, surface low-signal sources for pruning.
+- [ ] **Multi-tenant context** — generalize the agent so other solo operators can fork the repo, swap in their own `context.py`, and run the same pipeline against their own projects.
+- [ ] **Cost dashboard** — add a small monthly cost tracker that reads the Anthropic usage API and posts spend deltas alongside the digest.
+- [ ] **Pega Community deep-dive source** — current Pega fetcher pulls the general RSS feed; tighten it to specifically surface Decisioning and Constellation content.
 
 ---
 
