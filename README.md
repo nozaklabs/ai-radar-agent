@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-running%20Mon%20%2B%20Fri-success)
+![Status](https://img.shields.io/badge/status-running%20Sun-success)
 ![Cost](https://img.shields.io/badge/cost-<%20%241%2Fmonth-brightgreen)
 
 An autonomous agent that filters the AI/tech firehose into a curated, scored, project-aware digest — so a builder can stay informed without getting distracted.
@@ -13,16 +13,16 @@ Built by [Noha Zak](https://github.com/NohaZak) for **NoZak Labs** to defend foc
 
 ## What it does
 
-Twice a week (Mon + Fri at 7:00 AM Cairo), this agent:
+Once a week (Sunday at 11:00 AM Cairo), this agent:
 
 1. **Fetches** items from 7 sources: Hacker News, Product Hunt, GitHub Trending, Ben's Bites, TLDR AI, Reddit (r/MachineLearning + r/SideProject), and Pega Community
-2. **Dedupes** by URL and filters to the last 4 days
+2. **Dedupes** by URL and filters to the last 8 days
 3. **Scores** every item against the NoZak Labs project context using **Claude Haiku 4.5**
 4. **Tags** items with project relevance (Brands of Eden, lurniALP, Hykers, SE Job Hunt, Cross-cutting)
-5. **Writes** scored items into a **Notion database** for filterable review
+5. **Sends** an HTML email digest with one-tap triage actions (Adopt / Evaluate / Skip via mailto: Gmail filters)
 6. **Updates** `radar.md` in this repo and commits it back
 
-Total cost: **~$0.25/week (~$1/month)** in Claude API usage. Runs on GitHub Actions free tier.
+Total cost: **~$0.15/week (~$0.60/month)** in Claude API usage. Runs on GitHub Actions free tier.
 
 ---
 
@@ -30,7 +30,7 @@ Total cost: **~$0.25/week (~$1/month)** in Claude API usage. Runs on GitHub Acti
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  GitHub Actions (scheduled: Mon + Fri, 05:00 UTC)           │
+│  GitHub Actions (scheduled: Sunday, 09:00 UTC)              │
 └────────────────────────┬────────────────────────────────────┘
                          ▼
         ┌────────────────────────────────────┐
@@ -46,8 +46,9 @@ Total cost: **~$0.25/week (~$1/month)** in Claude API usage. Runs on GitHub Acti
         └────────────────┬───────────────────┘
                          ▼
         ┌────────────────────────────────────┐
-        │  src/outputs.py                    │
-        │  Writes to Notion DB + radar.md    │
+        │  src/outputs.py + email_digest.py  │
+        │  Sends Gmail digest + writes       │
+        │  radar.md                          │
         └────────────────────────────────────┘
 ```
 
@@ -57,7 +58,7 @@ Total cost: **~$0.25/week (~$1/month)** in Claude API usage. Runs on GitHub Acti
 
 The problem: dozens of new AI tools, GitHub repos, and launches drop every day. Trying to track them all destroys focus. Ignoring them entirely means missing genuinely useful tools.
 
-The solution: a personal agent that knows what I'm building (three client projects + an active job search) and scores every item by relevance — so I check the radar twice a week during dedicated 30-min slots, not every five minutes during deep work.
+The solution: a personal agent that knows what I'm building (three client projects + an active job search) and scores every item by relevance — so I check the radar once a week during a dedicated 30-min slot, not every five minutes during deep work.
 
 ---
 
@@ -95,7 +96,7 @@ What makes this useful isn't the score — it's the _Why it matters_ line. The a
 
 - **Python 3.11**
 - **Anthropic Claude Haiku 4.5** for scoring
-- **Notion API** for the database backend
+- **Gmail SMTP** for the weekly digest
 - **GitHub Actions** for scheduling and execution
 - **feedparser + requests** for source fetching
 
@@ -112,8 +113,11 @@ ai-radar-agent/
 │   ├── context.py             # NoZak Labs project priorities (the agent's "brain")
 │   ├── sources.py             # Fetchers for each source
 │   ├── scorer.py              # Claude scoring engine
-│   ├── outputs.py             # Notion + radar.md writers
+│   ├── outputs.py             # radar.md writer
+│   ├── email_digest.py        # Gmail SMTP digest sender
 │   └── main.py                # Orchestrator
+├── scripts/
+│   └── verify_smtp.py         # Local SMTP credential check
 ├── docs/
 │   └── SETUP.md               # Step-by-step setup instructions
 ├── radar.md                   # Auto-updated digest (don't edit manually)
@@ -130,9 +134,20 @@ ai-radar-agent/
 pip install -r requirements.txt
 
 # Set env vars (use a .env file or your shell)
+# Windows cmd:
+set ANTHROPIC_API_KEY=sk-ant-...
+set GMAIL_USER=noha@nozaklabs.com
+set GMAIL_APP_PASSWORD=xxxx_xxxx_xxxx_xxxx
+
+# PowerShell:
+$env:ANTHROPIC_API_KEY="sk-ant-..."
+$env:GMAIL_USER="noha@nozaklabs.com"
+$env:GMAIL_APP_PASSWORD="xxxx_xxxx_xxxx_xxxx"
+
+# Unix/macOS:
 export ANTHROPIC_API_KEY=sk-ant-...
-export NOTION_TOKEN=ntn_...
-export NOTION_DATABASE_ID=your_database_id_here
+export GMAIL_USER=noha@nozaklabs.com
+export GMAIL_APP_PASSWORD=xxxx_xxxx_xxxx_xxxx
 
 # Run the agent
 python -m src.main
@@ -151,8 +166,8 @@ Project priorities live in `src/context.py`. Edit the `PROJECTS`, `CROSS_CUTTING
 This is a living project. Active and planned improvements:
 
 - [ ] **Broader score distribution** — current scoring buckets too many items at exactly 72. Refine the rubric prompt so cross-cutting items differentiate more sharply.
-- [ ] **Weekly digest email** — push the Act Now section to email every Monday/Friday morning, so the radar is reviewable from the inbox without opening Notion.
-- [ ] **Source quality feedback loop** — track which "Act Now" items actually convert to "Adopt" decisions in Notion, surface low-signal sources for pruning.
+- [ ] **Triage feedback loop** — parse Gmail labels (Radar/Adopt, Radar/Evaluate, Radar/Skip) and feed adoption rate back into the scorer as a quality signal
+- [ ] **Source quality feedback loop** — track which "Act Now" items actually convert to "Adopt" decisions, surface low-signal sources for pruning.
 - [ ] **Multi-tenant context** — generalize the agent so other solo operators can fork the repo, swap in their own `context.py`, and run the same pipeline against their own projects.
 - [ ] **Cost dashboard** — add a small monthly cost tracker that reads the Anthropic usage API and posts spend deltas alongside the digest.
 - [ ] **Pega Community deep-dive source** — current Pega fetcher pulls the general RSS feed; tighten it to specifically surface Decisioning and Constellation content.
