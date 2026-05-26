@@ -174,9 +174,9 @@ def _score_one(client: anthropic.Anthropic, item: dict, system_prompt: str) -> d
 
 def score_items(items: list[dict]) -> list[dict]:
     """Score every item and return enriched list (filtered by MIN_SCORE_TO_KEEP)."""
-    api_key = os.environ.get("AI_API_KEY")
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        raise RuntimeError("AI_API_KEY not set in environment")
+        raise RuntimeError("ANTHROPIC_API_KEY not set in environment")
 
     client = anthropic.Anthropic(api_key=api_key)
     system_prompt = _build_system_prompt()

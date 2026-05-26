@@ -135,17 +135,17 @@ pip install -r requirements.txt
 
 # Set env vars (use a .env file or your shell)
 # Windows cmd:
-set AI_API_KEY=sk-...
+set ANTHROPIC_API_KEY=sk-...
 set GMAIL_USER=noha@nozaklabs.com
 set GMAIL_APP_PASSWORD=xxxx_xxxx_xxxx_xxxx
 
 # PowerShell:
-$env:AI_API_KEY="sk-..."
+$env:ANTHROPIC_API_KEY="sk-..."
 $env:GMAIL_USER="noha@nozaklabs.com"
 $env:GMAIL_APP_PASSWORD="xxxx_xxxx_xxxx_xxxx"
 
 # Unix/macOS:
-export AI_API_KEY=sk-...
+export ANTHROPIC_API_KEY=sk-...
 export GMAIL_USER=noha@nozaklabs.com
 export GMAIL_APP_PASSWORD=xxxx_xxxx_xxxx_xxxx
 

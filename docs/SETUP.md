@@ -18,7 +18,7 @@ This documents the one-time setup completed when this agent was built. Useful as
 2. Add billing — a small prepaid credit is enough for months of radar runs
 3. Name the key `nozak-radar-agent` in the provider console
 4. Save the key in a password manager or Windows Credential Manager
-5. Add it to GitHub Actions secrets as `AI_API_KEY` (see step 3 below)
+5. Add it to GitHub Actions secrets as `ANTHROPIC_API_KEY` (see step 3 below)
 
 ---
 
@@ -51,7 +51,7 @@ Add three secrets:
 
 | Name | Value |
 |---|---|
-| `AI_API_KEY` | Your AI scoring API key |
+| `ANTHROPIC_API_KEY` | Your AI scoring API key |
 | `GMAIL_USER` | `noha@nozaklabs.com` |
 | `GMAIL_APP_PASSWORD` | 16-char Gmail App Password |
 

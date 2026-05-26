@@ -47,7 +47,7 @@ def setup_logging() -> None:
 
 def check_environment() -> None:
     """Fail fast if required env vars are missing."""
-    required = ["AI_API_KEY", "GMAIL_USER", "GMAIL_APP_PASSWORD"]
+    required = ["ANTHROPIC_API_KEY", "GMAIL_USER", "GMAIL_APP_PASSWORD"]
     missing = [v for v in required if not os.environ.get(v)]
     if missing:
         raise RuntimeError(
